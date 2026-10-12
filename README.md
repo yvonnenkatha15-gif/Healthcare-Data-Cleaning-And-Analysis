@@ -1,4 +1,4 @@
-# 📂 Portfolio Project Title: 
+#  Portfolio Project Title: 
 ## Clinical-Financial Optimization: End-to-End Healthcare Data Scrubbing & Exploratory Analytics
 
 ### 1. Project Overview (The Business Scenario)
@@ -13,7 +13,7 @@ My primary mission was divided into two strategic phases:
 ### 2. The Data Engineering Layer (MySQL Core Cleaning)
 To preserve the absolute integrity of the hospital's primary source data, I created a physical data pipeline structure named `healthcare_staging2`. I purposefully rejected working directly on raw data to establish a secure professional roll-back environment.
 
-#### ⚔️ Duplicate Mitigation Strategy
+####  Duplicate Mitigation Strategy
 Real-world healthcare facilities frequently suffer from duplicate entry submissions due to system lags or double-clicking at registration desks. To isolate exact duplicate historical patient visits without crashing MySQL, I implemented a window formatting strategy using the built-in `ROW_NUMBER()` tool:
 
 ```sql
@@ -32,10 +32,10 @@ DELETE FROM healthcare_staging2 WHERE row_num > 1;
 ALTER TABLE healthcare_staging2 DROP COLUMN row_num;
 ```
 
-#### 🔤 Categorical Standardization Checks
+####  Categorical Standardization Checks
 I executed strict `SELECT DISTINCT` queries against high-risk text fields including `gender`, `admission_type`, and `medication_adherence` to hunt for structural typos. The upstream infrastructure proved highly sound, confirming clean, typo-free data structures across these parameters.
 
-#### 🔢 Numeric Boundary Auditing
+#### Numeric Boundary Auditing
 I ran descriptive boundary checks using `MIN()` and `MAX()` functions across all numerical vitals and metrics (including age, blood pressure, heart rate, and costs). The numeric data boundaries fell perfectly within realistic parameters, showing no extreme outliers or negative figures.
 
 ---
@@ -49,7 +49,7 @@ After transferring the pristine data stream to Excel, I built high-density summa
 
 ---
 
-### 🚀 Next Milestone: Advanced Power BI Dashboarding (Coming Soon)
-To transform this static exploratory model into a fully responsive, enterprise-grade reporting application, Phase 3 of this portfolio will focus on importing this clean schema directly into **Power BI Desktop**. I will engineer live interactive visual matrices to automate these clinical metrics permanently!
+###  Next Milestone: Advanced Power BI Dashboarding (Coming Soon)
+To transform this static exploratory model into a fully responsive, enterprise-grade reporting application, Phase 3 of this portfolio will focus on importing this clean schema directly into **Power BI Desktop**. I will engineer live interactive visual matrices to automate these clinical metrics permanently.
 
 
