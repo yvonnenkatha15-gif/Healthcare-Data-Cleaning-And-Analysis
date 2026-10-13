@@ -47,9 +47,12 @@ After transferring the pristine data stream to Excel, I built high-density summa
 * **Demographic Lifespans:** I utilized mathematical **Age Binning Brackets** to group patients into clear generational groups, mapping their hospitalization timelines cleanly without visual clutter.
 * **Advanced Distribution Tracking:** I deployed an interactive **Slicer Engine** alongside a **Scatter Plot Density Cloud** to explore the underlying relationship between a patient's age and their corresponding length of stay in a hospital bed.
 
----
+* ###  Phase 3: Advanced Power BI Dashboard Engineering (Complete)
+I successfully connected the clean SQL-derived data tables directly into Power BI Desktop to build a fully automated, interactive Executive Health Intelligence Monitor. 
+- **Core KPIs:** Automated a single-metric KPI card tracking the global hospital financial footprint (\$14.41M).
+- **Proportional Segmentation:** Deployed an executive Donut Chart uncovering that 'Emergency' admissions command the highest strategic budget footprint.
+- **Cross-Filtering & Discovery:** Engineered cross-filtering data relationships and custom demographic slicer modules allowing administrators to filter clinical parameters by Patient Gender dynamically with zero system latency.
 
-###  Next Milestone: Advanced Power BI Dashboarding (Coming Soon)
-To transform this static exploratory model into a fully responsive, enterprise-grade reporting application, Phase 3 of this portfolio will focus on importing this clean schema directly into **Power BI Desktop**. I will engineer live interactive visual matrices to automate these clinical metrics permanently.
+
 
 
